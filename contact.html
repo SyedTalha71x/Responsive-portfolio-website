@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn new things - Talha Hussain</title>
+    <link rel="stylesheet" href="css/utlis.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="navbar max-width-1 margin-auto">
+        <div class="nav-left">
+            <a href="/"><img src="images/dev1.png" alt="logo"></a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button class="side-btns bg-purple-800 px-2 py-1 text-white rounded-md hover:bg-purple-600"><a
+                    href="/login.html">Login</a></button>
+            <button class="side-btns resp-btn bg-purple-800 px-2 py-1 text-white rounded-md hover:bg-purple-600"><a
+                    href="/signup.html">Signup</a></button>
+        </div>
+    </nav>
+    <div class="hr-row max-width-1 margin-auto margin-y-1">
+        <hr>
+    </div>
+
+    <div class="skills max-width-1 margin-auto margin-y-1">
+        <div class="box">
+            <h4> <a href="https://www.w3schools.com/html/default.asp">HTML</a></h4>
+            <h4><a href="https://www.w3schools.com/css/default.asp">CSS</a></h4>
+            <h4><a href="https://www.w3schools.com/js/default.asp">JavaScript</a></h4>
+            <h4><a href="https://tailwindcss.com/">Tailwind CSS</a></h4>
+            <h4><a href="https://www.w3schools.com/react/default.asp">React Js</a></h4>
+            <h4><a href="https://www.w3schools.com/asp/default.asp">ASP.NET</a></h4>
+            <h4><a href="https://www.w3schools.com/sql/default.asp">SQL Server</a></h4>
+        </div>
+    </div>
+    <div class="hr-row max-width-1 margin-auto margin-y-1">
+        <hr>
+    </div>
+
+    <div class="contact-content font1 max-width-1 m-auto">
+        <!-- <div class="max-width-1 m-auto"><hr></div> -->
+        <h2 class="h-2 ">Contact Us</h2>
+        <div class="contact-form">
+            <form action="" id="contact-form">
+                <div class="form-box">
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="form-box">
+                    <input type="text" placeholder="Enter your Email">
+                </div>
+                <div class="form-box">
+                    <input type="text" placeholder="Enter your Address">
+                </div>
+                <div class="form-box">
+                    <input type="text" placeholder="Enter your Postal Code">
+                </div>
+                <div class="form-box">
+                    <input type="text" placeholder="Enter your Review">
+                </div>
+                <div class="form-box">
+                    <button class="btn bg-purple-800 text-white px-2 py-1 rounded-lg m-2 hover:bg-purple-700">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright">
+        Copyright &copy; www.talhadev.com! All rights reserved - 2023
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'DotNet Developer', 'Freelancer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const contactForm = document.getElementById("contact-form");
+
+            contactForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+                alert("Contact information submitted successfully!");
+                contactForm.reset();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

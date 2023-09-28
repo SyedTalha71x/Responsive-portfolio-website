@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn new things - Talha Hussain</title>
+    <link rel="stylesheet" href="css/utlis.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body>
+    <nav class="navbar max-width-1 margin-auto">
+        <div class="nav-left">
+            <a href="#"><img src="images/dev1.png" alt="logo"></a>
+            <ul>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button class="side-btns bg-purple-800 px-2 py-1 text-white rounded-md hover:bg-purple-600"><a
+                    href="/login.html">Login</a></button>
+            <button class="side-btns  bg-purple-800 px-2 py-1 text-white rounded-md hover:bg-purple-600"><a
+                    href="/signup.html">Signup</a></button>
+        </div>
+    </nav>
+    <div class="hr-row max-width-1 margin-auto margin-y-1">
+        <hr>
+    </div>
+
+    <div class="skills max-width-1 margin-auto margin-y-1">
+        <div class="box">
+            <h4> <a href="https://www.w3schools.com/html/default.asp">HTML</a></h4>
+            <h4><a href="https://www.w3schools.com/css/default.asp">CSS</a></h4>
+            <h4><a href="https://www.w3schools.com/js/default.asp">JavaScript</a></h4>
+            <h4><a href="https://tailwindcss.com/">Tailwind CSS</a></h4>
+            <h4><a href="https://www.w3schools.com/react/default.asp">React Js</a></h4>
+            <h4><a href="https://www.w3schools.com/asp/default.asp">ASP.NET</a></h4>
+            <h4><a href="https://www.w3schools.com/sql/default.asp">SQL Server</a></h4>
+        </div>
+    </div>
+    <div class="hr-row max-width-1 margin-auto margin-y-1">
+        <hr>
+    </div>
+
+    <section class="container-forms max-width-1 margin-auto margin-y-1 ">
+        <div class="login-form">
+            <div class="form-content">
+                <h2 class="text-3xl text-purple-950">Login</h2>
+                <form action=""  id="LoginForm">
+                    <div class="input-field">
+                        <input type="username" id="userch" class="input-user" placeholder="Username" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="userps" class="pass" placeholder="Password" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+                    <!-- <div class="link text-blue-900 ">
+                        <a href="#">Forgot Password?</a>
+                    </div> -->
+                    <div
+                        class="form-btn bg-purple-800 text-white text-center px-2 py-3 mt-5 cursor-pointer hover:bg-blue-800">
+                        <!-- <button ><a href="#" onclick="authentication()"">Login</a></button> -->
+                        <button id="btn" type="submit" onclick="auth()">Login</button>
+                    </div>
+                    <div class="link-sign text-blue-950 mt-4 text-center">
+                        <span>Already have an account? <a href="/signup.html"
+                                class="link signup-link underline">Signup</a> </span>
+                    </div>
+                </form>
+            </div>
+            <div class="line">
+            </div>
+            <div class="media-options">
+                <a href="https://www.facebook.com/" class="field facebook bg-blue-800 hover:bg-purple-800">
+                    <i class='bx bxl-facebook facebook-icon mr-1'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="https://accounts.google.com/InteractiveLogin/identifier?elo=1&ifkv=AYZoVhfEZKl1rjCEntF_mHqRuk5bzCFl3LeJGwBpIlQ4zfbx7MxVrd9T-iHzj_zAS9M3Kont2jWG&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                    class="field google ">
+                    <i class='bx bxl-google google-icon mr-1'></i>
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="copyright bg-purple-950 text-white mt-2">
+        Copyright &copy; www.talhadev.com! All rights reserved - 2023
+    </div>
+
+    <script src="js/loginsignup.js"></script>
+    <script>
+        function auth() {
+            document.getElementById('LoginForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const username = 'admin123@gmail.com';
+                const password = '123456';
+
+                const inputUsername = document.getElementById('userch').value;
+                const inputPassword = document.getElementById('userps').value;
+
+                if (inputUsername === username && inputPassword === password) {
+                    window.location.href = 'index.html';
+                    alert('Login Successfull');
+                } else {
+                    alert('Login failed.');
+                }
+            });
+        };
+    </script>
+
+</body>
+
+</html>

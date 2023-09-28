@@ -1,0 +1,248 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    padding: 23px;
+    background-color: white;
+    color: black;
+} */
+/* .magic-btn{
+    background-color: rgb(99, 59, 59);
+    color: rgb(49, 26, 26);
+} */
+
+/* Navigation bar Designing */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+    /* background-color: red; */
+    margin-top: 10px;
+    font-weight: 500;
+    /* position: sticky;
+    top: 0; */
+}
+.nav-left{
+    display: flex;
+    font-family: var(--font1);
+}
+.nav-left ul{
+    display: flex;
+    align-items: center;
+    margin: 0 77px;
+    font-size: 20px;
+}
+.nav-left ul li{
+    margin: 10px;
+}
+.nav-left ul li a{
+    text-decoration: none;
+
+}
+.nav-left ul li a:hover{
+    
+    transition: all 0.1s ease-in-out;
+    border-bottom: 2px solid black;
+}
+.nav-left img{
+    height: 50px;
+    width: 60px;
+    border-radius: 90px;
+}
+.nav-right button{
+    font-size: 16px;
+    margin-left: 6px;
+    padding-bottom: 6px;
+}
+
+/* skills designing here */
+.skills{
+    background-color: rgb(250, 244, 244);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box h4{
+    margin: 12px;
+    font-size: 18px;
+    font-family: var(--font1);
+    cursor: pointer;
+}
+.box h4:hover{
+    border-bottom: 2px solid black;
+}
+
+/* content designing here  */
+.content{
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin-top: 32px;
+    padding: 8px;
+}
+.content-left{
+    font-family: var(--font3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.content-left p{
+    font-family: var(--font1);
+    width: 50%;
+    font-size: 17px;
+    padding-top: 15px;
+}
+.content-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-right img{
+    height: 300px;
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 300px;
+    margin-right: 80px;
+}
+.content-left h1{
+    font-size: 40px;
+}
+.buttons{
+    margin-top: 5px;
+    font-family: var(--font1);
+}
+
+/* services desiging here  */
+.h-primary{
+    text-align: center;
+}
+.services-container{
+    height: 100%;
+    /* background-color: wheat; */
+}
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.box-1{
+    background-color: rgb(236, 233, 233);
+    height: 270px;
+    width: 270px;
+    text-align: center;
+    padding: 17px 13px;
+    margin: 10px;
+}
+.h-secondary{
+    margin-top: 8px;
+    font-size: 20px;
+    font-family: var(--font3);
+}
+.box-1 p{
+    padding-top: 10px;
+}
+.box-1 img{
+    height: 80px;
+    width: 70px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border-radius: 100px;
+
+}
+
+
+/* footer designing here  */
+footer{
+    height: 380px;
+    /* background-color: purple; */
+    margin-top: 50px;
+}
+.footer-zero img{
+    height: 260px;
+    width: 260px;
+    border-radius: 300px;
+    object-fit: cover;
+    position: relative;
+    right: 76px;
+    bottom: 12px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 103px;
+    cursor: pointer;
+}
+.footer ul{
+    /* padding-left: 80px; */
+    padding-top: 50px;
+}
+.footer ul li{
+    padding-top: 10px;
+
+}
+.images{
+   display: flex;
+   text-align: right;
+   justify-content: flex-end;
+   align-items: center;
+}
+.images img{
+    /* padding-top: 20px; */
+
+    height: 30px;
+    border-radius: 20px;
+}
+
+.f-heading{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+/* skills coding here  */
+.myskills{
+    height: 50vh;
+    /* background-color: rgb(51, 75, 75); */
+}
+.skill-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-set img{
+    height: 120px;
+}
+.image-skill{
+    padding: 40px 0;
+    margin: 15px;
+    /* margin-top: 15px; */
+}
+.s-heading{
+    text-align: center;
+    /* padding-top: 10px; */
+    /* margin-top: 20px; */
+}
+
+

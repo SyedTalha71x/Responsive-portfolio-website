@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Kanit:ital,wght@0,400;0,500;1,200&family=Merriweather+Sans:wght@500&family=Poppins:wght@600&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Kanit:ital,wght@0,400;0,500;1,200&family=Merriweather+Sans:wght@500&family=Poppins:wght@600&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Kanit:ital,wght@0,400;0,500;1,200&family=Merriweather+Sans:wght@500&family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap');
+:root {
+    --font1: 'Baloo Bhaina 2', cursive;
+    --font2: 'Roboto', sans-serif;
+    --font3: 'Poppins', sans-serif;
+    --font4: 'Merriweather Sans', sans-serif;
+}
+
+.font1 {
+    font-family: var(--font1);
+}
+
+.font2 {
+    font-family: var(--font2);
+}
+
+.max-width-1 {
+    max-width: 80vw;
+}
+
+.max-width-2 {
+    max-width: 60vw;
+}
+
+.margin-auto {
+    margin: auto;
+}
+.margin-y-1{
+    margin-top: 5px;
+}
+.hr-row{
+    background-color: black;
+    color: black;
+}
